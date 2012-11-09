@@ -13,6 +13,10 @@
 #              six digits number.
 #              -There are 899 palindromes with six digits: from 100001 to
 #              999999
+#              -888888 = 924 * 962 and 999 * 999 = 998001, so our number should
+#              be between 889988 and 997799
+#              -So I'll iterate from 997 to 889 (97) and dividing each
+#              palindrome numbers iterating from 999 to 924 (75)
 #-------------------------------------------------------------------------------
 
 def palindrocreate(n):
@@ -21,19 +25,18 @@ def palindrocreate(n):
     part = str(n)
     return int(part+part[::-1])
 
-construct = 995 #You don't need to begin at 999999 because 999*999=998001
-while construct <= 100:
-    pal = palindrocreate(construct)
-    div1 = 999
-    div2 = 0
-    while div1 <= 100:
-        if pal % div1 == 0:
-            div2 = pal // div1
-            if len(str(div2)) == 3: return construct
-        div -= 1
-    construct -= 1
+construct = 997
+while construct >= 889:
 
-print (construct)
+    pal, div1, div2 = palindrocreate(construct), 999, 1
+    print(pal)
+
+    while div1 >= 924:
+        if pal % div1 == 0:
+            div2 = pal / div1
+            if len(str(div2)) == 3: print (construct)
+        div1 -= 1
+    construct -= 1
 
 
 #if __name__ == '__main__':

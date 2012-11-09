@@ -2,7 +2,7 @@
 # Name:        Project Euler Problem 3
 # Purpose:     What is the largest prime factor of the number 600851475143 ?
 #
-# Author:      Sebastián Torrente
+# Author:      SebastiÃ¡n Torrente
 #
 # Created:     08/11/2012
 # Comment:     Surpisingly, it doesn't need as much optimization as I thought.
