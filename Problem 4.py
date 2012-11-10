@@ -3,7 +3,7 @@
 # Purpose:     Find the largest palindrome made from the product of two 3-digit
 #              numbers.
 #
-# Author:      Sebastián Torrente
+# Author:      SebastiÃ¡n Torrente
 #
 # Created:     08/11/2012
 # Comment:     Easier than it seems if you think in advance. Python makes the
@@ -29,11 +29,12 @@ construct = 997
 while construct >= 889:
 
     pal, div1, div2 = palindrocreate(construct), 999, 1
-    print(pal)
+#    print(pal)
 
     while div1 >= 924:
         if pal % div1 == 0:
-            div2 = pal / div1
+            div2 = pal // div1
+#            print (div2)
             if len(str(div2)) == 3: print (construct)
         div1 -= 1
     construct -= 1
