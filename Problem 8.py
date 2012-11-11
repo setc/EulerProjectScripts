@@ -26,7 +26,12 @@ def consecProdMax(inter, n):
     return sol
 
 if __name__ == '__main__':
-    chain = open(r'\Data\data8.txt','r')
-    data = chain.read()
+    test = '123456789874563578966542'
+    print('Test Chain' = test)
+    print('concecProdmax(test,5) = ',consecProdMax(test,5))
+#Solution for the Problem 8. Need to solve the route error when I put only
+#\Data\data8.txt
+#    chain = open(r'C:\Python32\EulerProjectScripts\Data\data8.txt')
+#    data = chain.read()
 
-    print (consecProdMax(data, 5))
+#    print (consecProdMax(data, 5))
