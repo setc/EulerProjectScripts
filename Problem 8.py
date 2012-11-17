@@ -3,7 +3,7 @@
 # Purpose:     Find the greatest product of five consecutive digits in the
 #              1000-digit number.
 #
-# Author:      Sebastián Torrente
+# Author:      SebastiÃ¡n Torrente
 #
 # Created:     10/11/2012
 # Comment:     I don't understand exactly what are asking me here. I guess is
@@ -26,12 +26,11 @@ def consecProdMax(inter, n):
     return sol
 
 if __name__ == '__main__':
-    test = '123456789874563578966542'
-    print('Test Chain' = test)
-    print('concecProdmax(test,5) = ',consecProdMax(test,5))
+#    test = '123456789874563578966542'
+#    print('Test Chain' = test)
+#    print('concecProdmax(test,5) = ',consecProdMax(test,5))
 #Solution for the Problem 8. Need to solve the route error when I put only
 #\Data\data8.txt
-#    chain = open(r'C:\Python32\EulerProjectScripts\Data\data8.txt')
-#    data = chain.read()
-
-#    print (consecProdMax(data, 5))
+    chain = open(r'Data\data8.txt')
+    data = chain.read()
+    print (consecProdMax(data, 5))
